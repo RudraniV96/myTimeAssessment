@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6646227188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsHook.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "MyTime- haircut appointment",
+        "description": "",
+        "id": "my-time---appointment-selection;mytime--haircut-appointment",
+        "after": [
+          {
+            "result": {
+              "duration": 227050805,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsHook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 246856392,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on homepage",
+            "match": {
+              "location": "HomePageSteps.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 479939730,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user search for \"haircut\" in \"San Francisco, CA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "haircut",
+                  "offset": 17
+                },
+                {
+                  "val": "San Francisco, CA",
+                  "offset": 30
+                }
+              ],
+              "location": "HomePageSteps.userSearchForHaircutInSanFranciscoCA(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6250211389,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify that multiple results are shown - at least 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 50
+                }
+              ],
+              "location": "HomePageSteps.verifyThatMultipleResultsAreShownAtLeast(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5678975208,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects business with name \"Test - Sabre Cuts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test - Sabre Cuts",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageSteps.userSelectsBusinessWithNameTestSabreCuts(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 282564154,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Select \"All services\" in the services filter from the left panel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "All services",
+                  "offset": 8
+                }
+              ],
+              "location": "AppointmentSteps.selectInTheServicesFilterFromTheLeftPanel(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 553172008,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select staff 1 from the staff filter in the left side panel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 13
+                }
+              ],
+              "location": "AppointmentSteps.selectSecondStaffFromTheStaffFilterInTheLeftSidePanel(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 355982505,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click the \"Book\" button for the \"Men\u0027s Haircut\" service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Book",
+                  "offset": 11
+                },
+                {
+                  "val": "Men\u0027s Haircut",
+                  "offset": 33
+                }
+              ],
+              "location": "AppointmentSteps.clickTheBookButtonForTheMenSHaircutService(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 402319603,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user press \"Select Time\" in the add-on modal opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Select Time",
+                  "offset": 12
+                }
+              ],
+              "location": "AppointmentSteps.userPressInTheAddOnModalOpened(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820729879,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify that the user is presented with a list of available time slots with at least 2 entries",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 84
+                }
+              ],
+              "location": "ConfirmationSteps.verifyresultSet(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36952197,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Service displayed is the one selected in the step before",
+            "match": {
+              "location": "ConfirmationSteps.verifyServiceName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32946028,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Service price is the same as the one displayed in the step before",
+            "match": {
+              "location": "ConfirmationSteps.verifyServicePrice()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31733425,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Staff selected is the staff chosen before",
+            "match": {
+              "location": "ConfirmationSteps.verifyServiceStaffMember()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "My Time - appointment selection",
+    "description": "",
+    "id": "my-time---appointment-selection",
+    "keyword": "Feature",
+    "uri": "src/test/resources/haircutTest.feature"
+  }
+]
